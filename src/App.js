@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Foundation from 'react-foundation';
+import { TopBar } from 'react-foundation';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <TopBar />
     </div>
     );
   }
