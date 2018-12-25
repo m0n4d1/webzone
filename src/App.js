@@ -5,6 +5,18 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#0091EA",
+      light: "#D81B60"
+    },
+    secondary: {
+      main: "#00BCD4",
+      light: "#E53935"
+    }
+  }  
+});
 
 const theme = createMuiTheme({palette: {
     primary: {
