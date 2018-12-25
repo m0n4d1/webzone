@@ -1,12 +1,13 @@
 import React from 'react';
-import { Header } from 'semantic-ui-react';
+import {Menu} from 'semantic-ui-react';
 
-const HomeHeader = () => (
-    <div>
+const items = [
+    { key: 'Home', active: true, name: 'Home' },
+    { key: 'About us', name: 'About us' },
+    { key: 'Suggestions', name: 'Suggestions' },
+  ]
 
-        <Header as='h1'> Home page </Header>
-    
-    </div>
-)
+const menu = () => <Menu items={items} />;
 
-export default HomeHeader;
+
+ export default menu;
