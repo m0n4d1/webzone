@@ -12,7 +12,9 @@ class App extends Component {
     render() {
         return (<div className="root">
                     <H/>
-                    <M/>
+                    <div className="menu">
+                        <M/>
+                    </div>
                 </div>);
     }
 
