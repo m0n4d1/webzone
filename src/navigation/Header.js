@@ -32,7 +32,7 @@ const TopNav = styled.nav`
 `
 const TopHeader = styled.header`
   h1 {
-    font-family: Righteous;
+    font-family: Righteous, Helvetica, sans-serif;
     text-align: center;
     font-size: 300%;
     color: #fff;
