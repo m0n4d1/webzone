@@ -34,12 +34,18 @@ const Section = styled.section`
       background-attachment: fixed;
       background-size: span;
       background-position: center;
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+      
     `
   )}
   ${props => props.shadow && (
     `
-      box-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+      box-shadow: ${props.shadow === "inset" ? "inset" : ""} 0 2px 4px rgba(0,0,0,0.5); 
+    `
+  )}
+
+  ${props => props.overide && (
+    `
+      ${props.overide}
     `
   )}
 `
