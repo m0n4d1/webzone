@@ -13,7 +13,7 @@ export default class App extends Component {
       <BrowserRouter>
         <Fragment>
           <Header/>
-          <Route exact path="/" component={Home}/>
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
           <Route path="/blog" component={Blog}/>
           <Route path="/About" component={About}/>
           <Footer/>

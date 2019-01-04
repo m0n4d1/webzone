@@ -53,7 +53,7 @@ export default class Header extends Component {
         <Section color={"#19f"} sticky shadow>
           <TopNav>
             <ul>
-              <li><NavLink to="/" >Home</NavLink></li>
+              <li><NavLink to={process.env.PUBLIC_URL + '/'} >Home</NavLink></li>
               <li><NavLink to="/blog">Blog</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li>
             </ul>

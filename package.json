@@ -10,11 +10,13 @@
     "react-scripts": "2.1.1",
     "styled-components": "^4.1.3"
   },
+  "homepage": "https://m0n4d1.github.io/webzone",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
