@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
+import { GlobalStyles } from './util/GlobalStyles'
 import Header from './navigation/Header'
 import Footer from './navigation/Footer'
 import Home from './views/Home'
@@ -16,6 +17,7 @@ export default class App extends Component {
           <Route path="/blog" component={Blog}/>
           <Route path="/About" component={About}/>
           <Footer/>
+          <GlobalStyles/>
         </Fragment>
       </BrowserRouter>
     )
