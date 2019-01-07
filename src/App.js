@@ -1,11 +1,15 @@
 import React, { Component, Fragment } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { GlobalStyles } from './util/GlobalStyles'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faComments, faHandshake, faCogs, faBrain } from '@fortawesome/free-solid-svg-icons'
+
 import Header from './navigation/Header'
 import Footer from './navigation/Footer'
 import Home from './views/Home'
 import Blog from './views/Blog'
 import About from './views/About'
+library.add(faComments, faHandshake, faCogs, faBrain)
 
 
 export default class App extends Component {

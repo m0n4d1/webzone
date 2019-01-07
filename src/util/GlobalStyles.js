@@ -9,6 +9,16 @@ export const GlobalStyles = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+  }
+
+  h2,h3,h4,h5,h6 {
+    font-family: Comfortaa;
+    font-weight: 100;
+  }
+
+  p {
+    font-family: Nunito;
   }
 
   code {

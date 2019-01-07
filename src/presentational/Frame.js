@@ -30,7 +30,7 @@ const Frame = styled.div`
     
   }
   }
-  grid-gap: 15px;
+  grid-gap: ${props => props.nogap ? "" : "15px"};
 `
 
 export default Frame
