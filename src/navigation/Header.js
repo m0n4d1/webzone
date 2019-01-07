@@ -10,8 +10,7 @@ const TopNav = styled.nav`
     margin: 0;
     padding: 0;
     li {
-      list-style: none;
-        
+        list-style: none;
         height: 100%;
         width: 100%;
       a {
@@ -43,14 +42,12 @@ export default class Header extends Component {
   render() {
     return (
       <Fragment>
-        <Section color={"#2af"}
-          //img={"https://i.pinimg.com/originals/f5/f5/6a/f5f56ac8a2e3e5f39980b8b6fe83f3a9.jpg"}
-        >
+        <Section color={"#2af"} nopad >
           <TopHeader>
             <h1>THOUGHT ZONE</h1>
           </TopHeader>
         </Section>
-        <Section color={"#19f"} sticky shadow>
+        <Section color={"#19f"} sticky shadow overide={`z-index: 100;`} nopad>
           <TopNav>
             <ul>
               <li><NavLink to={process.env.PUBLIC_URL + '/'} >Home</NavLink></li>

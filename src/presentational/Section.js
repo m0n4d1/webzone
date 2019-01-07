@@ -24,7 +24,7 @@ const Section = styled.section`
   height: ${props => props.height}px;
 
   margin: 0;
-  padding: 0;
+  padding: ${props => props.nopad ? 0 : "15px"};
 
   background-color: ${props => props.color};
 
@@ -50,4 +50,6 @@ const Section = styled.section`
   )}
 `
 
-export default Section;
+
+export default Section
+

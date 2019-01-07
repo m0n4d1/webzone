@@ -7,6 +7,7 @@ import Home from './views/Home'
 import Blog from './views/Blog'
 import About from './views/About'
 
+
 export default class App extends Component {
   render() {
     return (
