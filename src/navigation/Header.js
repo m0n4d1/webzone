@@ -21,6 +21,10 @@ const TopNav = styled.nav`
         text-decoration: none;
         font-size: 18px;
         transition: .2s ease;
+        font-family: Comfortaa;
+        &.active {
+          background-color: #2af;
+        }
         &:hover {
           background-color: #fff;
           color: #19f;
@@ -50,7 +54,7 @@ export default class Header extends Component {
         <Section color={"#19f"} sticky shadow overide={`z-index: 100;`} nopad>
           <TopNav>
             <ul>
-              <li><NavLink to={process.env.PUBLIC_URL + '/'} >Home</NavLink></li>
+              <li><NavLink exact to={process.env.PUBLIC_URL + '/'} >Home</NavLink></li>
               <li><NavLink to="/blog">Blog</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li>
             </ul>
