@@ -12,8 +12,11 @@ export default class Home extends Component {
   render() {
     return (
       <Fragment>
-        <Section>
-          <h2>Test</h2>
+        <Section
+          img={"http://www.kurzweilai.net/images/connected-neurons.png"}
+          height={400}
+        >
+          <h2>Welcome to Thought Zone</h2>
           <p>Sit deserunt Lorem eu elit occaecat nulla nostrud sit voluptate culpa laborum dolor. Incididunt incididunt culpa ipsum labore dolore fugiat magna. Dolor Lorem ad ipsum consectetur anim commodo aute incididunt. Esse Lorem aute velit consectetur anim anim nostrud ex cillum quis non magna. Consectetur excepteur nisi laboris ut laborum qui. Officia veniam nulla pariatur sit voluptate eiusmod aute laborum enim dolor adipisicing Lorem. Velit nulla do laboris nostrud.</p>
         </Section>
         <Section >
@@ -59,9 +62,8 @@ export default class Home extends Component {
             </Block>
           </Frame>
         </Section>
-        <Section shadow={"inset"}
+        <Section 
           height={300}
-          img={"https://atgbcentral.com/data/out/177/5541354-technology-wallpaper.jpg"}
         >
           <h2>Test</h2>
         </Section>

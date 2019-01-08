@@ -32,7 +32,7 @@ const Section = styled.section`
     `
       background-image: url(${props.img});
       background-attachment: fixed;
-      background-size: span;
+      background-size: cover;
       background-position: center;
       
     `
