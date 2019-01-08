@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/webzone/static/js/runtime~main.f5a2a60b.js"
   },
   {
-    "revision": "67b5209e24a30e807896",
-    "url": "/webzone/static/js/main.67b5209e.chunk.js"
+    "revision": "f8d1bb4fc337fac0e2d6",
+    "url": "/webzone/static/js/main.f8d1bb4f.chunk.js"
   },
   {
     "revision": "2c710e6493ba959a9dba",
     "url": "/webzone/static/js/1.2c710e64.chunk.js"
   },
   {
-    "revision": "a1c8216a5bd95c92293b126bc93063e7",
+    "revision": "1e64a44c9005eba9a4cac458c10ec658",
     "url": "/webzone/index.html"
   }
 ];
