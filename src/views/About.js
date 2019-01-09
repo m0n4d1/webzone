@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import Section from '../presentational/Section'
+import Section from '../layout/Section'
 
 export default class About extends Component {
   render() {

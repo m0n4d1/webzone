@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import Section from '../presentational/Section'
+import Section from '../layout/Section'
 
 const TopNav = styled.nav`
   ul {

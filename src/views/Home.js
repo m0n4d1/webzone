@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react'
-import Section from '../presentational/Section.js'
-import Frame from '../presentational/Frame.js';
+import Section from '../layout/Section.js'
+import Frame from '../layout/Frame.js';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import IconCard from '../presentational/IconCard.js';
 import { faAlignCenter } from '@fortawesome/free-solid-svg-icons';
-import Block from '../presentational/Block.js';
+import Block from '../layout/Block.js';
 import BigHeading from '../presentational/BigHeading.js';
 
 export default class Home extends Component {

@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Section from '../presentational/Section'
+import Section from '../layout/Section'
 import styled from 'styled-components'
-import Frame from '../presentational/Frame';
-import Block from '../presentational/Block';
+import Frame from '../layout/Frame';
+import Block from '../layout/Block';
 
 const SubFooter = styled.div`
   h6 {
@@ -19,13 +19,16 @@ const FooterButtons = styled.ul`
   padding: 0;
   li {
     display: grid;
-    justify-content: center;
+    align-content: center;
     background-color: #ddd;
-    padding: 8px;
+    padding: 6px;
     &.facebook { background-color: #3b5998; }
     &.youtube { background-color: #bb0000; }
     &.twitter { background-color: #55acee; }
     &.instagram { background-color: #125688; }
+    svg{
+      justify-self: center;
+    }
   }
 `
 
@@ -34,12 +37,12 @@ export default class Footer extends Component {
     return (
       <Fragment>
         <Section color={"#444"} overide={"color: #ddd; "}>
-          <Frame size={3}>
-            <Block>
+          <Frame size={6}>
+            <Block colspan={2}>
               <h2>Thought Zone</h2>
               <p>Sit deserunt Lorem eu elit occaecat nulla nostrud sit voluptate culpa laborum dolor.</p>
             </Block>
-            <Block>
+            <Block colspan={2}>
               <h4>Contact</h4>
               <p>Sit deserunt Lorem eu elit occaecat nulla nostrud sit voluptate culpa laborum dolor. Incididunt incididunt culpa ipsum labore dolore fugiat magna. Dolor Lorem ad ipsum consectetur anim commodo aute incididunt.</p>
             </Block>

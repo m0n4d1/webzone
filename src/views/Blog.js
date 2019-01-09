@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
-import Section from '../presentational/Section'
-import Frame from '../presentational/Frame';
+import Section from '../layout/Section'
+import Frame from '../layout/Frame';
 
 export default class Blog extends Component {
   render() {
