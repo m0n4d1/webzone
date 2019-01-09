@@ -37,12 +37,12 @@ export default class Footer extends Component {
     return (
       <Fragment>
         <Section color={"#444"} overide={"color: #ddd; "}>
-          <Frame size={6}>
-            <Block colspan={2}>
+          <Frame size={3}>
+            <Block>
               <h2>Thought Zone</h2>
               <p>Sit deserunt Lorem eu elit occaecat nulla nostrud sit voluptate culpa laborum dolor.</p>
             </Block>
-            <Block colspan={2}>
+            <Block>
               <h4>Contact</h4>
               <p>Sit deserunt Lorem eu elit occaecat nulla nostrud sit voluptate culpa laborum dolor. Incididunt incididunt culpa ipsum labore dolore fugiat magna. Dolor Lorem ad ipsum consectetur anim commodo aute incididunt.</p>
             </Block>

@@ -13,7 +13,11 @@ import About from './views/About'
 library.add(faComments, faHandshake, faCogs, faBrain, faFacebook, faYoutube, faTwitter, faInstagram)
 
 
+
 export default class App extends Component {
+
+  
+
   render() {
     return (
       <BrowserRouter>
