@@ -1,11 +1,11 @@
 {
-  "main.js": "/webzone/static/js/main.d316cb6f.chunk.js",
-  "main.js.map": "/webzone/static/js/main.d316cb6f.chunk.js.map",
-  "static/js/1.2274efd7.chunk.js": "/webzone/static/js/1.2274efd7.chunk.js",
-  "static/js/1.2274efd7.chunk.js.map": "/webzone/static/js/1.2274efd7.chunk.js.map",
+  "main.js": "/webzone/static/js/main.a615c073.chunk.js",
+  "main.js.map": "/webzone/static/js/main.a615c073.chunk.js.map",
+  "static/js/1.d8997a11.chunk.js": "/webzone/static/js/1.d8997a11.chunk.js",
+  "static/js/1.d8997a11.chunk.js.map": "/webzone/static/js/1.d8997a11.chunk.js.map",
   "runtime~main.js": "/webzone/static/js/runtime~main.f5a2a60b.js",
   "runtime~main.js.map": "/webzone/static/js/runtime~main.f5a2a60b.js.map",
   "index.html": "/webzone/index.html",
-  "precache-manifest.71a0afae5e0b9c64d1e929b168f636f7.js": "/webzone/precache-manifest.71a0afae5e0b9c64d1e929b168f636f7.js",
+  "precache-manifest.a50f22bdcad2610e061f93128f12779d.js": "/webzone/precache-manifest.a50f22bdcad2610e061f93128f12779d.js",
   "service-worker.js": "/webzone/service-worker.js"
 }
