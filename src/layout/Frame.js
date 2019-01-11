@@ -31,6 +31,12 @@ const Frame = styled.div`
   }
   }
   grid-gap: ${props => props.nogap ? "" : "15px"};
+
+  ${props => props.overide && (
+    `
+      ${props.overide}
+    `
+  )}
 `
 
 export default Frame

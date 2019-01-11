@@ -26,7 +26,7 @@ const Section = styled.section`
   margin: 0;
   padding: ${props => props.nopad ? 0 : "15px"};
 
-  background-color: ${props => props.color};
+  background-color: ${props => props.bgcolor};
 
   ${props => props.img && (
     `
@@ -34,7 +34,6 @@ const Section = styled.section`
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
-      
     `
   )}
   ${props => props.shadow && (
@@ -42,7 +41,7 @@ const Section = styled.section`
       box-shadow: ${props.shadow === "inset" ? "inset" : ""} 0 2px 4px rgba(0,0,0,0.5); 
     `
   )}
-
+  
   ${props => props.overide && (
     `
       ${props.overide}

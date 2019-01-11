@@ -39,7 +39,11 @@ export default class Home extends Component {
           <h2>Welcome to Thought Zone</h2>
           <p>Sit deserunt Lorem eu elit occaecat nulla nostrud sit voluptate culpa laborum dolor. Incididunt incididunt culpa ipsum labore dolore fugiat magna. Dolor Lorem ad ipsum consectetur anim commodo aute incididunt. Esse Lorem aute velit consectetur anim anim nostrud ex cillum quis non magna. Consectetur excepteur nisi laboris ut laborum qui. Officia veniam nulla pariatur sit voluptate eiusmod aute laborum enim dolor adipisicing Lorem. Velit nulla do laboris nostrud.</p>
         </Section>
-        <Section color={"#aaa"} fluid nopad>
+        <Section bgcolor={"#99AAB5"} fluid nopad overide={`
+          > div {
+            height: 400px;
+          }
+        `}>
           <Particles
             height="400px"
             params={{
@@ -78,17 +82,71 @@ export default class Home extends Component {
               }
             }}
           />
+          <Section overide={`position: absolute; width: 100%; box-sizing: border-box;`} height={400} shadow={"inset"}>
+
+
+            <Frame>
+              <Block overide={`
+              justify-self: center;
+              display: grid;
+              align:content: center;
+              width: 100%;
+              max-width: 600px;
+              background-color: rgba(114,137,218,0.85); 
+              border-radius: 15px;
+              box-shadow: 0 2px 4px rgba(44,47,51,0.5);
+              border: 1px solid white;
+              text-align: center;
+              h1 {
+                margin: 20px 0;
+                font-family: Righteous;
+                font-size: 30px;
+                color: white;
+              }
+              a {
+                margin: 12px 0;
+                background-color: white;
+                width: 120px;
+                padding: 10px;
+                font-family: Nunito;
+                font-size: 20px;
+                justify-self: center;
+                color: #7289DA;
+                align-self: center;
+                border-radius: 5px;
+                border: 1px solid white;
+                transition: all .15s ease;
+                text-decoration: none;
+                &:hover {
+                  background-color: #7289DA;
+                  color: white;
+                  cursor: pointer;
+                  box-shadow: 0 2px 4px black;
+                  transform: translateY(-2px);
+                }
+              }
+            `}>
+                <IconCard>
+                  <h1>Join Our Community</h1>
+                  <faAlignCenter>
+                    <FontAwesomeIcon color="white" icon={['fab', 'discord']} size="10x"/>
+                  </faAlignCenter>
+                  <a href="https://discord.gg/MS37RUj" rel="noopener noreferrer"  target="_blank">Join Now!</a>
+                </IconCard>
+              </Block>
+            </Frame>
+          </Section>
         </Section>
             <Section>
             <h2>Fluid Test</h2>
           <p>Sit deserunt Lorem eu elit occaecat nulla nostrud sit voluptate culpa laborum dolor. Incididunt incididunt culpa ipsum labore dolore fugiat magna. Dolor Lorem ad ipsum consectetur anim commodo aute incididunt. Esse Lorem aute velit consectetur anim anim nostrud ex cillum quis non magna. Consectetur excepteur nisi laboris ut laborum qui. Officia veniam nulla pariatur sit voluptate eiusmod aute laborum enim dolor adipisicing Lorem. Velit nulla do laboris nostrud.</p>
             </Section>
-        <Section color={"#39f"}>
+        <Section bgcolor={"#39f"}>
           <BigHeading>Our Values</BigHeading>
         </Section>
-        <Section color={"#39f"} nopad>
+        <Section bgcolor={"#39f"} nopad>
           <Frame size={4} nogap>
-            <Block color={"#18f"}>
+            <Block bgcolor={"#18f"}>
               <IconCard>
                 <faAlignCenter>
                   <FontAwesomeIcon color="white" icon="brain" size="9x"/>
@@ -96,7 +154,7 @@ export default class Home extends Component {
                 <h3>Having Presence of Mind</h3>
               </IconCard>
             </Block>
-            <Block color={"#17f"}>
+            <Block bgcolor={"#17f"}>
               <IconCard>
                 <faAlignCenter>
                   <FontAwesomeIcon color="white" icon="handshake" size="9x"/>
@@ -104,7 +162,7 @@ export default class Home extends Component {
                 <h3>Being Good Spirited</h3>
               </IconCard>
             </Block>
-            <Block color={"#19f"}>
+            <Block bgcolor={"#19f"}>
               <IconCard>
                 <faAlignCenter>
                   <FontAwesomeIcon color="white" icon="cogs" size="9x"/>
@@ -112,7 +170,7 @@ export default class Home extends Component {
                 <h3>Regard for Logic and Reason</h3>
               </IconCard>
             </Block>
-            <Block color={"#18f"}>
+            <Block bgcolor={"#18f"}>
               <IconCard>
                 <faAlignCenter>
                   <FontAwesomeIcon color="white" icon="comments" size="9x"/>

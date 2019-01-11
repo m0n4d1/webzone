@@ -46,12 +46,12 @@ export default class Header extends Component {
   render() {
     return (
       <Fragment>
-        <Section color={"#2af"} nopad >
+        <Section bgcolor={"#2af"} nopad >
           <TopHeader>
             <h1>THOUGHT ZONE</h1>
           </TopHeader>
         </Section>
-        <Section color={"#19f"} sticky shadow overide={`z-index: 100;`} nopad>
+        <Section  bgcolor={"#19f"} sticky shadow overide={`z-index: 100;`} nopad>
           <TopNav>
             <ul>
               <li><NavLink exact to={process.env.PUBLIC_URL + '/'} >Home</NavLink></li>

@@ -36,7 +36,7 @@ export default class Footer extends Component {
   render() {
     return (
       <Fragment>
-        <Section color={"#444"} overide={"color: #ddd; "}>
+        <Section bgcolor={"#444"} overide={"color: #ddd; "}>
           <Frame size={3}>
             <Block>
               <h2>Thought Zone</h2>
@@ -67,7 +67,7 @@ export default class Footer extends Component {
             </Block>
           </Frame>
         </Section>
-        <Section color={"#111"} nopad>
+        <Section bgcolor={"#111"} nopad>
           <SubFooter>
             <h6>Thought Zone © 2019</h6>
           </SubFooter>
