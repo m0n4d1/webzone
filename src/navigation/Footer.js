@@ -36,7 +36,7 @@ export default class Footer extends Component {
   render() {
     return (
       <Fragment>
-        <Section bgcolor={"#444"} overide={"color: #ddd; "}>
+        <Section bgcolor={"#444"} overide={"color: #ddd; "} >
           <Frame size={3}>
             <Block>
               <h2>Thought Zone</h2>
@@ -67,10 +67,22 @@ export default class Footer extends Component {
             </Block>
           </Frame>
         </Section>
-        <Section bgcolor={"#111"} nopad>
+        <Section fluid nopad>
+        <Section nopad height={220} shadow={"inset"}
+          img={"http://brainsciencesjournal.org/wp-content/uploads/neuronuul.jpg"}
+        >
+
+        </Section>
+        <Section bgcolor={"#111"} nopad 
+          overide={`
+            position: sticky;
+            bottom: -1px;
+          `}
+        >
           <SubFooter>
             <h6>Thought Zone © 2019</h6>
           </SubFooter>
+        </Section>
         </Section>
       </Fragment>
     )

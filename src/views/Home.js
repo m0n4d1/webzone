@@ -16,7 +16,7 @@ export default class Home extends Component {
     let xhr = new XMLHttpRequest();
     xhr.open("GET","https://discordapp.com/api/guilds/520225497666551818/widget.json")
     xhr.onload = () => {
-      console.log(JSON.parse(xhr.response))
+      // console.log(JSON.parse(xhr.response))
       this.setState({
         members: JSON.parse(xhr.response).members
       })
@@ -35,11 +35,16 @@ export default class Home extends Component {
     let onlineMembers = this.state.members && this.state.members.length
     return (
       <Fragment>
-        <Section>
+        <Section nopad
+        height={400}
+        >
           <h2>Welcome to Thought Zone</h2>
           <p>Sit deserunt Lorem eu elit occaecat nulla nostrud sit voluptate culpa laborum dolor. Incididunt incididunt culpa ipsum labore dolore fugiat magna. Dolor Lorem ad ipsum consectetur anim commodo aute incididunt. Esse Lorem aute velit consectetur anim anim nostrud ex cillum quis non magna. Consectetur excepteur nisi laboris ut laborum qui. Officia veniam nulla pariatur sit voluptate eiusmod aute laborum enim dolor adipisicing Lorem. Velit nulla do laboris nostrud.</p>
         </Section>
-        <Section bgcolor={"#99AAB5"} fluid nopad overide={`
+        <Section 
+        img={"http://brainsciencesjournal.org/wp-content/uploads/neuronuul.jpg"}
+        // bgcolor={"#99AAB5"} 
+        fluid nopad overide={`
           > div {
             height: 400px;
           }
@@ -60,9 +65,9 @@ export default class Home extends Component {
                   random: false
                 },
                 line_linked: {
-                  color: "#fff",
+                  color: "#2af",
                   width: 1,
-                  opacity:2
+                  opacity:3
                 },
                 move: {
                   direction: "left",
@@ -87,45 +92,45 @@ export default class Home extends Component {
 
             <Frame>
               <Block overide={`
-              justify-self: center;
-              display: grid;
-              align:content: center;
-              width: 100%;
-              max-width: 600px;
-              background-color: rgba(114,137,218,0.85); 
-              border-radius: 15px;
-              box-shadow: 0 2px 4px rgba(44,47,51,0.5);
-              border: 1px solid white;
-              text-align: center;
-              h1 {
-                margin: 20px 0;
-                font-family: Righteous;
-                font-size: 30px;
-                color: white;
-              }
-              a {
-                margin: 12px 0;
-                background-color: white;
-                width: 120px;
-                padding: 10px;
-                font-family: Nunito;
-                font-size: 20px;
                 justify-self: center;
-                color: #7289DA;
-                align-self: center;
-                border-radius: 5px;
+                display: grid;
+                align:content: center;
+                width: 100%;
+                max-width: 600px;
+                background-color: rgba(114,137,218,0.85); 
+                border-radius: 15px;
+                box-shadow: 0 2px 4px rgba(44,47,51,0.5);
                 border: 1px solid white;
-                transition: all .15s ease;
-                text-decoration: none;
-                &:hover {
-                  background-color: #7289DA;
+                text-align: center;
+                h1 {
+                  margin: 20px 0;
+                  font-family: Righteous;
+                  font-size: 30px;
                   color: white;
-                  cursor: pointer;
-                  box-shadow: 0 2px 4px black;
-                  transform: translateY(-2px);
                 }
-              }
-            `}>
+                a {
+                  margin: 12px 0;
+                  background-color: white;
+                  width: 100px;
+                  padding: 10px;
+                  font-family: Nunito;
+                  font-size: 20px;
+                  justify-self: center;
+                  color: #7289DA;
+                  align-self: center;
+                  border-radius: 5px;
+                  border: 1px solid white;
+                  transition: all .15s ease;
+                  text-decoration: none;
+                  &:hover {
+                    background-color: #7289DA;
+                    color: white;
+                    cursor: pointer;
+                    box-shadow: 0 2px 4px black;
+                    transform: translateY(-2px);
+                  }
+                }
+              `}>
                 <IconCard>
                   <h1>Join Our Community</h1>
                   <faAlignCenter>
