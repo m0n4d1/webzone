@@ -35,8 +35,7 @@ export default class Home extends Component {
     let onlineMembers = this.state.members && this.state.members.length
     return (
       <Fragment>
-        <Section nopad
-        height={400}
+        <Section
         >
           <h2>Welcome to Thought Zone</h2>
           <p>Sit deserunt Lorem eu elit occaecat nulla nostrud sit voluptate culpa laborum dolor. Incididunt incididunt culpa ipsum labore dolore fugiat magna. Dolor Lorem ad ipsum consectetur anim commodo aute incididunt. Esse Lorem aute velit consectetur anim anim nostrud ex cillum quis non magna. Consectetur excepteur nisi laboris ut laborum qui. Officia veniam nulla pariatur sit voluptate eiusmod aute laborum enim dolor adipisicing Lorem. Velit nulla do laboris nostrud.</p>
@@ -70,7 +69,7 @@ export default class Home extends Component {
                   opacity:3
                 },
                 move: {
-                  direction: "left",
+                  direction: "top",
                   speed: 3,
                   bounce: false,
                   out_mode: "out"
@@ -97,7 +96,7 @@ export default class Home extends Component {
                 align:content: center;
                 width: 100%;
                 max-width: 600px;
-                background-color: rgba(114,137,218,0.85); 
+                background-color: rgba(80,104,198,0.85); 
                 border-radius: 15px;
                 box-shadow: 0 2px 4px rgba(44,47,51,0.5);
                 border: 1px solid white;
